@@ -8,10 +8,36 @@ body {
   font-family: Besley, serif;
 }
 
+.header,
+.links,
+.buttons-right {
+  /* Applies display flex */
+  /* centers items within these CONTAINERS */
+  display: flex;
+  align-items: center;
+}
+
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+
+body div .links {
+  margin-right: auto;
+}
+
+.logo,
+.links,
+.buttons-right {
+  margin: 8px;
+}
+
+.links,
+.buttons-right{
+  gap: 16px;
 }
 
 .profile-image {
@@ -27,6 +53,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-right: 16px;
 }
 
 button {
@@ -35,6 +62,7 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  height: fit-content;
 }
 
 a {
@@ -45,4 +73,5 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
