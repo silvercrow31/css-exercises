@@ -5,13 +5,18 @@ body {
 }
 
 .header {
-  height: 72px;
+  /* height: 72px; */
+  padding: 14px 16px;
+  font-size: 32px;
+  font-weight: 900;
   background: darkmagenta;
   color: white;
 }
 
 .footer {
-  height: 72px;
+  text-align: center;
+  /* height: 72px; */
+  padding: 25.5px 0;
   background: #eee;
   color: darkmagenta;
 }
@@ -20,10 +25,36 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  padding: 16px;
 }
-
+.sidebar ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 24px;
+}
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 250px;
+  height: 250px;
+  margin: 1em;
+  padding: 1em;
+}
+
+.wrapper,
+.cards-container {
+  display: flex;
+}
+
+.cards-container {
+  flex-wrap:wrap;
+  padding: 48px;
+
 }
